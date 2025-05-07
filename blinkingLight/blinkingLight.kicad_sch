@@ -1520,6 +1520,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 92.71 88.9)
@@ -1538,6 +1634,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7278b021-b0de-4454-ab86-f4badd1e80dd")
+	)
+	(junction
+		(at 157.48 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "819533ad-5c6d-4ca5-ad69-7b47023c8127")
 	)
 	(junction
 		(at 119.38 72.39)
@@ -1699,6 +1801,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 49.53) (xy 157.48 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4967d67a-9bec-4b9a-956f-e889643aa4f2")
+	)
+	(wire
+		(pts
 			(xy 118.11 67.31) (xy 119.38 67.31)
 		)
 		(stroke
@@ -1776,6 +1888,16 @@
 			(type default)
 		)
 		(uuid "7fed4968-b97f-40c9-9f71-a576c30447dc")
+	)
+	(wire
+		(pts
+			(xy 157.48 102.87) (xy 165.1 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81afbddf-5711-4896-bf63-d64b5e57651f")
 	)
 	(wire
 		(pts
@@ -1993,7 +2115,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 96.52 87.122 90)
 			(effects
 				(font
@@ -2061,7 +2183,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+		(property "Footprint" "TerminalBlock:TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal"
 			(at 29.21 48.26 0)
 			(effects
 				(font
@@ -2131,7 +2253,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 91.7448 106.68 0)
 			(effects
 				(font
@@ -2149,7 +2271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 92.71 102.87 0)
 			(effects
 				(font
@@ -2201,7 +2323,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O6.35mm_Z10.0mm"
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 69.85 130.81 0)
 			(effects
 				(font
@@ -2617,7 +2739,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 96.52 65.532 90)
 			(effects
 				(font
@@ -2687,7 +2809,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O6.35mm_Z10.0mm"
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 69.85 123.19 0)
 			(effects
 				(font
@@ -2773,7 +2895,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 96.52 75.692 90)
 			(effects
 				(font
@@ -2868,7 +2990,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_2x03_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
 			(at 110.49 69.85 0)
 			(effects
 				(font
@@ -2941,7 +3063,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "220"
 			(at 72.39 116.8399 0)
 			(effects
 				(font
@@ -2950,7 +3072,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 71.628 115.57 90)
 			(effects
 				(font
@@ -3135,6 +3257,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 165.1 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5dbcc01-f726-4301-a4a4-e311119cd145")
+		(property "Reference" "#FLG02"
+			(at 165.1 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 165.1 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 165.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71bfc69e-94f9-4ea7-9b1a-12825e12cec3")
+		)
+		(instances
+			(project ""
+				(path "/c44aec96-1bce-4271-9432-231eb29dd86b"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Timer:ICM7555xB")
 		(at 157.48 88.9 0)
 		(unit 1)
@@ -3162,7 +3350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-6_W7.62mm"
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 179.07 99.06 0)
 			(effects
 				(font
@@ -3217,6 +3405,72 @@
 			(project ""
 				(path "/c44aec96-1bce-4271-9432-231eb29dd86b"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 163.83 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fbe47b29-5553-4296-9832-8a2512ad0afd")
+		(property "Reference" "#FLG01"
+			(at 163.83 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 163.83 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 163.83 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "abd760fd-4a0f-432f-923c-9bfbd6a48346")
+		)
+		(instances
+			(project ""
+				(path "/c44aec96-1bce-4271-9432-231eb29dd86b"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
