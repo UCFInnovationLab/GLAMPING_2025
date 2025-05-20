@@ -3063,7 +3063,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "100"
 			(at 72.39 116.8399 0)
 			(effects
 				(font
